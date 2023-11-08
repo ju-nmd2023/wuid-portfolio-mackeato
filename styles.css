@@ -1,0 +1,129 @@
+
+.blue   {
+    color:rgb(39, 36, 199)
+}
+
+.blue-harlowsi{
+    font-family: harlowsi;
+    color: rgb(39, 36, 199)
+}
+
+/* Comment test*/
+
+
+@font-face {
+    font-family: firstfont;
+    src: url(LATO-REGULAR.TTF);
+}
+@font-face {
+    font-family: latobold;
+    src: url(LATO-BOLD.TTF);
+}
+
+@font-face {
+    font-family: harlowsi;
+    src: url(HARLOWSI.TTF);
+}
+
+.font-fix{
+    font-family: firstfont;
+}
+
+.font-bold{
+    font-family: latobold;
+    margin-left: 40px;
+    margin-top: 0px;
+
+}
+
+.back-button{
+    color: black;
+    font-family: harlowsi;
+    font-size: 30px;
+    margin-top: -65px;
+    margin-left: -50px;
+    float: left;
+    
+}
+
+.back-button-beer{
+    color:black;
+    font-family: harlowsi;
+    font-size: 30px;
+}
+
+.contact-button{
+    font-family: harlowsi;
+    float: left;
+    margin-top: -20px;
+    margin-left: 100px;
+    color:rgb(39, 36, 199)
+    
+}
+
+.form-box{
+    width: 200px;
+    height: 100px;
+}
+
+h1{
+    font-family: harlowsi;
+    font-size: 65px;
+    margin-left: 30px;
+    
+}
+h2{
+    font-family: harlowsi;
+    margin-top: -65px;
+    margin-left: 65px;
+}
+h3{
+    font-family: latobold;
+}
+p{
+    font-family: firstfont;
+}
+p2{
+    font-family: latobold; color: #220ca1;
+}
+li{
+    font-family: latobold;
+    font-size: 30px;
+}
+a{
+    font-family: firstfont;
+}
+
+figure{
+    margin-left: 0;
+}
+
+img{
+    float: inline-left;
+    margin-left: 500px;
+    margin-top: -250px;
+}
+
+.img-contact{
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-top: -3px;
+    margin-left: -10px;
+   
+}
+
+.beer-png{
+    height: 170px;
+    width: 170px;
+    float: right;
+    margin-right: 300px;
+    margin-top: -210px;
+}
+
+.get-in-font{
+    font-family: harlowsi;
+    font-size: 65px;
+    margin-left: -80px;
+    
+}
