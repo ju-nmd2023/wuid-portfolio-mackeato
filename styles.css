@@ -52,6 +52,21 @@
     font-size: 30px;
 }
 
+.back-button-projects{
+float: left;
+margin-left: 120px;
+margin-top: -60px;
+font-family: harlowsi;
+font-size: 30px;
+color: black;
+}
+
+.projects-button{
+    color:#220ca1;
+    font-family: latobold;
+    font-size: 30;
+}
+
 .contact-button{
     font-family: harlowsi;
     float: left;
@@ -92,13 +107,21 @@ li{
 }
 a{
     font-family: firstfont;
+    color: black;
 }
 
 figure{
     margin-left: 0;
 }
 
-img{
+figcaption{
+    font-family: latobold;
+    font-size: 26px;
+}
+
+
+
+.img-float{
     float: inline-left;
     margin-left: 500px;
     margin-top: -250px;
@@ -113,6 +136,12 @@ img{
    
 }
 
+.img-projects{
+   
+    height: 200px;
+    align-items: center;
+}
+
 .beer-png{
     height: 170px;
     width: 170px;
@@ -121,9 +150,84 @@ img{
     margin-top: -210px;
 }
 
+
 .get-in-font{
     font-family: harlowsi;
     font-size: 65px;
     margin-left: -80px;
+    
+}
+
+/* POLY CAT */
+.info-head{
+    margin-top: 30px;
+}
+
+.cat-body{
+    font-family: latobold;
+    font-size: 25px;
+    margin-right: 40px;
+    margin-top: -30px;
+    max-width: 1200px;
+}
+
+.back-button-cat{
+    font-family: harlowsi;
+    font-size: 40px;
+    color: black;
+    margin-left: 20px;
+}
+
+.cat-info-style{
+    margin: 30px;
+    padding: 30px;
+    float: left;
+    width: 500px;
+}
+
+
+
+
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 130px;
+    align-content: center;
+}
+
+@media screen and (max-width: 1000px){
+
+   
+    .project-container{
+        display: inline;
+       
+        text-align: center;
+    }
+
+    .project-container-2{
+        display: inline;
+        text-align: center;
+    }
+
+    .img-float
+  
+}
+
+
+@media screen and (max-width: 1230px) {
+    
+    .cat-info-style{
+        float: none;
+    }
+
+    .cat-body{
+        max-width: 630px;
+    }
     
 }
