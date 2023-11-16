@@ -166,7 +166,7 @@ figcaption{
 .cat-body{
     font-family: latobold;
     font-size: 25px;
-    margin-right: 40px;
+    margin-right: -40px;
     margin-top: -30px;
     max-width: 1200px;
 }
@@ -230,4 +230,15 @@ figcaption{
         max-width: 630px;
     }
     
+}
+
+@media  and (max-width: 440) {
+    .cat-body{
+        margin-right: -100px;
+    }
+
+    .img-float{
+        margin-right: 80px;
+        margin-left: -80px;
+    }
 }
