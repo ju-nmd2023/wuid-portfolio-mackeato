@@ -83,8 +83,8 @@ color: black;
 
 h1{
     font-family: harlowsi;
-    font-size: 65px;
-    margin-left: 30px;
+    font-size: 5rem;
+    margin-left: 3%;
     
 }
 h2{
@@ -108,10 +108,11 @@ li{
 a{
     font-family: firstfont;
     color: black;
+   
 }
 
 figure{
-    margin-left: 0;
+    margin: 0;
 }
 
 figcaption{
@@ -138,8 +139,11 @@ figcaption{
 
 .img-projects{
    
-    height: 200px;
-    align-items: center;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 3%;
+    
 }
 
 .beer-png{
@@ -182,7 +186,7 @@ figcaption{
     margin: 30px;
     padding: 30px;
     float: left;
-    width: 500px;
+    width: 50%;
 }
 
 
@@ -192,31 +196,20 @@ figcaption{
 .project-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-.project-container-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 130px;
-    align-content: center;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5%;
+    box-sizing: border-box;
+    align-items: start;
+    margin-right: 7%;
 }
 
 @media screen and (max-width: 1000px){
-
-   
-    .project-container{
-        display: inline;
-       
+    .project-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         text-align: center;
     }
-
-    .project-container-2{
-        display: inline;
-        text-align: center;
-    }
-
-    .img-float
-  
 }
 
 
@@ -224,6 +217,7 @@ figcaption{
     
     .cat-info-style{
         float: none;
+        width: 90%;
     }
 
     .cat-body{
@@ -232,7 +226,7 @@ figcaption{
     
 }
 
-@media  and (max-width: 440) {
+@media screen  and (max-width: 440px) {
     .cat-body{
         margin-right: -100px;
     }
