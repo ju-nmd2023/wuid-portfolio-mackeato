@@ -1,28 +1,20 @@
 
-.blue   {
-    color:rgb(39, 36, 199)
-}
 
-.blue-harlowsi{
-    font-family: harlowsi;
-    color: rgb(39, 36, 199)
-}
-
-/* Comment test*/
+/* Fonts */
 
 
 @font-face {
     font-family: firstfont;
-    src: url(LATO-REGULAR.TTF);
+    src: url(fonts/LATO-REGULAR.TTF);
 }
 @font-face {
     font-family: latobold;
-    src: url(LATO-BOLD.TTF);
+    src: url(fonts/LATO-BOLD.TTF);
 }
 
 @font-face {
     font-family: harlowsi;
-    src: url(HARLOWSI.TTF);
+    src: url(fonts/HARLOWSI.TTF);
 }
 
 .font-fix{
@@ -35,6 +27,8 @@
     margin-top: 0px;
 
 }
+
+/* Buttons */
 
 .back-button{
     color: black;
@@ -76,10 +70,30 @@ color: black;
     
 }
 
+/* General classes */
+
+.blue   {
+    color:rgb(39, 36, 199)
+}
+
+.blue-harlowsi{
+    font-family: harlowsi;
+    color: rgb(39, 36, 199)
+}
+
 .form-box{
     width: 200px;
     height: 100px;
 }
+
+.get-in-font{
+    font-family: harlowsi;
+    font-size: 65px;
+    margin-left: -80px;
+    
+}
+
+/* Elements */
 
 h1{
     font-family: harlowsi;
@@ -120,7 +134,7 @@ figcaption{
     font-size: 26px;
 }
 
-
+/* Img classes */
 
 .img-float{
     float: inline-left;
@@ -155,12 +169,7 @@ figcaption{
 }
 
 
-.get-in-font{
-    font-family: harlowsi;
-    font-size: 65px;
-    margin-left: -80px;
-    
-}
+
 
 /* POLY CAT */
 .info-head{
@@ -189,9 +198,33 @@ figcaption{
     width: 50%;
 }
 
+/* Animation styling */
+
+.animation{
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+    border-radius: 40%;
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
+@keyframes shake {
+    35%{
+        transform: scale(1.2);
+    }
+
+    40%{
+        transform: rotate(-20deg) scale(1.2);
+    }
+
+    50%{
+        transform: rotate(20deg) scale(1.2);
+    }
+}
 
 
-
+/* Container and media queries */
 
 .project-container{
     display: grid;
@@ -235,4 +268,13 @@ figcaption{
         margin-right: 80px;
         margin-left: -80px;
     }
+}
+
+@media screen and (max-width: 800px) {
+    .animation{
+        width: 40%;
+        height: 40%;
+        margin-left: 50px;
+    }
+    
 }
