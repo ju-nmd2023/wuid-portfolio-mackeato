@@ -81,10 +81,8 @@ color: black;
     color: rgb(39, 36, 199)
 }
 
-.form-box{
-    width: 200px;
-    height: 100px;
-}
+
+
 
 .get-in-font{
     font-family: harlowsi;
@@ -92,6 +90,39 @@ color: black;
     margin-left: -80px;
     
 }
+
+.form-box{
+    width: 60px;
+    height: 20px;
+    margin: 3px;
+    margin-left: -50px;
+    border: none;
+    color: rgb(255, 142, 142);
+    background-color: ;
+}
+
+.touch-button{
+    font-family: harlowsi;
+    color: rgb(255, 142, 142);
+    background-color: black;
+    margin: 3px;
+    border: none;
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+.home-button{
+    background-color: #220ca1;
+
+    font-family: harlowsi;
+    font-size: 36px;
+    color: rgb(160, 212, 198);
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
 
 /* Elements */
 
@@ -204,24 +235,26 @@ figcaption{
     width: 400px;
     height: 400px;
     margin-left: 200px;
+    margin-top: -50px;
     border-radius: 40%;
-    animation-name: shake;
-    animation-duration: 1s;
+    animation-name: roll;
+    animation-duration: 3s;
+    animation-delay: 1s;
+ 
 }
 
-@keyframes shake {
-    35%{
-        transform: scale(1.2);
-    }
+@keyframes roll {
+    0% {
+        transform: translateX(0) rotate(0deg);
+      }
+      50% {
+        transform: translateX(300px) rotate(180deg);
+      }
+      100% {
+        transform: translateX(0) rotate(0deg);
+      }
 
-    40%{
-        transform: rotate(-20deg) scale(1.2);
     }
-
-    50%{
-        transform: rotate(20deg) scale(1.2);
-    }
-}
 
 
 /* Container and media queries */
